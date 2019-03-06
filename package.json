@@ -1,0 +1,62 @@
+{
+  "name": "change-color",
+  "displayName": "change color",
+  "description": "color format switcher",
+  "version": "0.0.1",
+  "publisher": "DeepKolos",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.colorToHEX",
+    "onCommand:extension.colorToHEXA",
+    "onCommand:extension.colorToRGB",
+    "onCommand:extension.colorToRGBA",
+    "onCommand:extension.colorToHSL",
+    "onCommand:extension.colorToHSLA"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.colorToHEX",
+        "title": "Color HEX"
+      },
+      {
+        "command": "extension.colorToHEXA",
+        "title": "Color HEXA"
+      },
+      {
+        "command": "extension.colorToRGB",
+        "title": "Color RGB"
+      },
+      {
+        "command": "extension.colorToRGBA",
+        "title": "Color RGBA"
+      },
+      {
+        "command": "extension.colorToHSL",
+        "title": "Color HSL"
+      },
+      {
+        "command": "extension.colorToHSLA",
+        "title": "Color HSLA"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "eslint": "^4.11.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {}
+}
