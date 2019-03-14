@@ -41,9 +41,6 @@ exports.register = context => {
             // 减一是支持识别光标在颜色值边缘的情况: #000000光标位置
 
             convertors.forEach(convertor => {
-              // 不需要检测目标格式的颜色
-              if (convertor.name === type.name) return;
-
               const marks = convertor.parse(
                 searchStr,
                 filterInRange.bind(
