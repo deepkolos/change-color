@@ -4,6 +4,10 @@
   "description": "color format switcher",
   "version": "0.0.1",
   "publisher": "DeepKolos",
+  "repository": {
+    "type": "git",
+		"url": "https://github.com/deepkolos/change-color"
+  },
   "engines": {
     "vscode": "^1.30.0"
   },
